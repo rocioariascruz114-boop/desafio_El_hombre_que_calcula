@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolución de Ejercicios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Resolución de Ejercicios</h1>
+        <p>Introduce tus datos para calcular los resultados</p>
+    </header>
+
+    <main class="container">
+
+        <!-- EJERCICIO 1: CAMELLOS -->
+        <section class="card">
+            <h2>1. Reparto de Camellos (El Hombre que Calculaba)</h2>
+            <p>Calcula la parte entera de camellos que recibe cada heredero:</p>
+
+            <form id="formCamellos">
+                <div class="form-group">
+                    <label for="totalCamellos">Total de camellos:</label>
+                    <input type="number" id="totalCamellos" placeholder="Ej. 35" required>
+                </div>
+                <div class="grid-3">
+                    <div class="form-group">
+                        <label for="d1">Denominador 1° heredero:</label>
+                        <input type="number" id="d1" placeholder="Ej. 2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="d2">Denominador 2° heredero:</label>
+                        <input type="number" id="d2" placeholder="Ej. 3" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="d3">Denominador 3° heredero:</label>
+                        <input type="number" id="d3" placeholder="Ej. 9" required>
+                    </div>
+                </div>
+                <button type="submit">Calcular Camellos</button>
+            </form>
+
+            <div id="resCamellos" class="resultado hidden">
+                <h3>Resultado:</h3>
+                <p id="txtCamellos"></p>
+            </div>
+        </section>
+
+        <!-- EJERCICIO 2: JOYERO -->
+        <section class="card">
+            <h2>2. Problema del Joyero (El Hombre que Calculaba)</h2>
+            <p>Calcula el hospedaje aplicando la regla de tres / diferencia proporcional:</p>
+
+            <form id="formJoyero">
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label for="v1">1° Venta:</label>
+                        <input type="number" id="v1" placeholder="Ej. 100" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="p1">1° Hospedaje:</label>
+                        <input type="number" id="p1" placeholder="Ej. 20" required>
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label for="v2">2° Venta:</label>
+                        <input type="number" id="v2" placeholder="Ej. 200" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="p2">2° Hospedaje:</label>
+                        <input type="number" id="p2" placeholder="Ej. 35" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="vReal">Venta Real:</label>
+                    <input type="number" id="vReal" placeholder="Ej. 140" required>
+                </div>
+                <button type="submit">Calcular Hospedaje</button>
+            </form>
+
+            <div id="resJoyero" class="resultado hidden">
+                <h3>Resultado:</h3>
+                <p id="txtJoyero"></p>
+            </div>
+        </section>
+
+        <!-- EJERCICIO 3: ECUACIÓN CUADRÁTICA -->
+        <section class="card">
+            <h2>3. Raíces de Ecuación Cuadrática (ax² + bx + c = 0)</h2>
+            <p>Calcula el discriminante D = b² - 4ac y las raíces:</p>
+
+            <form id="formCuadratica">
+                <div class="grid-3">
+                    <div class="form-group">
+                        <label for="coefA">Valor de a:</label>
+                        <input type="number" id="coefA" placeholder="Ej. 3" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="coefB">Valor de b:</label>
+                        <input type="number" id="coefB" placeholder="Ej. 6" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="coefC">Valor de c:</label>
+                        <input type="number" id="coefC" placeholder="Ej. 3" step="any" required>
+                    </div>
+                </div>
+                <button type="submit">Calcular Raíces</button>
+            </form>
+
+            <div id="resCuadratica" class="resultado hidden">
+                <h3>Resultado:</h3>
+                <p id="txtCuadratica"></p>
+            </div>
+        </section>
+
+        <!-- EJERCICIO 4: ESTIMACIÓN DE PI -->
+        <section class="card">
+            <h2>4. Estimación de Pi usando un Bucle</h2>
+            <p>Aproximación de Pi sumando 1/i² con un bucle for:</p>
+
+            <form id="formPi">
+                <div class="form-group">
+                    <label for="valN">Valor de n:</label>
+                    <input type="number" id="valN" placeholder="Ej. 10000" min="1" required>
+                </div>
+                <button type="submit">Calcular Pi</button>
+            </form>
+
+            <div id="resPi" class="resultado hidden">
+                <h3>Resultado:</h3>
+                <p id="txtPi"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Página creada con HTML, CSS y JavaScript sencillo.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
